@@ -172,7 +172,7 @@
             this.Btn_Nuevo.Text = "Nuevo";
             this.Btn_Nuevo.UseVisualStyleBackColor = true;
             // 
-            // Frm_ABM_Proveedores
+            // Frm_ABM_Nuevo_Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +183,8 @@
             this.Controls.Add(this.Btn_Nuevo);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Frm_ABM_Proveedores";
+            this.Name = "Frm_ABM_Nuevo_Proveedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Proveedor...";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -17,14 +17,23 @@ namespace Ferreteria_Industrial.Formularios
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Frm_ABM_Clientes_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_nuevo_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Nuevo_Cliente Frm_Alta_Cliente = new Frm_ABM_Nuevo_Cliente();
+            Frm_Alta_Cliente.ShowDialog();
+            Frm_Alta_Cliente.Dispose();
         }
     }
 }
