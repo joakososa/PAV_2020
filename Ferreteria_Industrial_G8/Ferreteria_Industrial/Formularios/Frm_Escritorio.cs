@@ -47,5 +47,20 @@ namespace Ferreteria_Industrial
             ABM_Proveedor.ShowDialog();
             ABM_Proveedor.Dispose();
         }
+
+        private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Clientes Frm_clientes = new Frm_ABM_Clientes();
+            Frm_clientes.ShowDialog();
+            Frm_clientes.Dispose();
+
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Proveedores Frm_prov = new Frm_ABM_Proveedores();
+            Frm_prov.ShowDialog();
+            Frm_prov.Dispose();
+        }
     }
 }

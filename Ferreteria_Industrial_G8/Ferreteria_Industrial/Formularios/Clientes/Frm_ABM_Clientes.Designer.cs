@@ -32,9 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_buscar_todos = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.Txt_RazonSocial = new System.Windows.Forms.TextBox();
             this.Txt_CUIT = new System.Windows.Forms.TextBox();
-            this.Btn_Buscar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -56,40 +57,50 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.groupBox1.Controls.Add(this.btn_buscar_todos);
+            this.groupBox1.Controls.Add(this.btn_buscar);
             this.groupBox1.Controls.Add(this.Txt_RazonSocial);
             this.groupBox1.Controls.Add(this.Txt_CUIT);
-            this.groupBox1.Controls.Add(this.Btn_Buscar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(669, 77);
-            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Cliente...";
+            // 
+            // btn_buscar_todos
+            // 
+            this.btn_buscar_todos.Location = new System.Drawing.Point(536, 30);
+            this.btn_buscar_todos.Name = "btn_buscar_todos";
+            this.btn_buscar_todos.Size = new System.Drawing.Size(89, 23);
+            this.btn_buscar_todos.TabIndex = 3;
+            this.btn_buscar_todos.Text = "Buscar Todos";
+            this.btn_buscar_todos.UseVisualStyleBackColor = true;
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Location = new System.Drawing.Point(440, 30);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
+            this.btn_buscar.TabIndex = 2;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
             // 
             // Txt_RazonSocial
             // 
             this.Txt_RazonSocial.Location = new System.Drawing.Point(291, 32);
             this.Txt_RazonSocial.Name = "Txt_RazonSocial";
             this.Txt_RazonSocial.Size = new System.Drawing.Size(100, 20);
-            this.Txt_RazonSocial.TabIndex = 2;
+            this.Txt_RazonSocial.TabIndex = 1;
             // 
             // Txt_CUIT
             // 
             this.Txt_CUIT.Location = new System.Drawing.Point(70, 32);
             this.Txt_CUIT.Name = "Txt_CUIT";
             this.Txt_CUIT.Size = new System.Drawing.Size(100, 20);
-            this.Txt_CUIT.TabIndex = 1;
-            // 
-            // Btn_Buscar
-            // 
-            this.Btn_Buscar.Location = new System.Drawing.Point(440, 30);
-            this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Buscar.TabIndex = 3;
-            this.Btn_Buscar.Text = "Buscar";
-            this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Txt_CUIT.TabIndex = 0;
             // 
             // label2
             // 
@@ -116,7 +127,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 95);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(669, 324);
-            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Clientes...";
             // 
@@ -159,8 +170,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(634, 291);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.TabIndex = 0;
             // 
             // CUIT
             // 
@@ -277,5 +287,6 @@
         private System.Windows.Forms.Button Btn_Eliminar;
         private System.Windows.Forms.Button Btn_Salir;
         private System.Windows.Forms.Button Btn_Buscar;
+        private System.Windows.Forms.Button btn_buscar_todos;
     }
 }
