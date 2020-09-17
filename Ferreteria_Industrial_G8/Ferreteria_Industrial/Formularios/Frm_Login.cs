@@ -16,6 +16,10 @@ namespace Ferreteria_Industrial.Formularios
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         private void Btn_Sesion_Click(object sender, EventArgs e)
         {
@@ -46,16 +50,9 @@ namespace Ferreteria_Industrial.Formularios
 
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
-            if (System.Windows.Forms.Application.MessageLoop)
-            {
-                // WinForms app
-                System.Windows.Forms.Application.Exit();
-            }
-            else
-            {
-                // Console app
-                System.Environment.Exit(1);
-            }
+            this.Usuario = "";
+            this.Close();
+
         }
     }
 }

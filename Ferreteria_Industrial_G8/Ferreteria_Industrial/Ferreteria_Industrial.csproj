@@ -62,7 +62,7 @@
     <Compile Include="Formularios\Frm_ABM_Nuevo_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Clientes\Frm_ABM_Nuevo_Cliente.Designer.cs">
+    <Compile Include="Formularios\Frm_ABM_Nuevo_Cliente.Designer.cs">
       <DependentUpon>Frm_ABM_Nuevo_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_Escritorio.cs">
@@ -71,16 +71,16 @@
     <Compile Include="Formularios\Frm_Escritorio.Designer.cs">
       <DependentUpon>Frm_Escritorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Clientes\Frm_ABM_Clientes.cs">
+    <Compile Include="Formularios\Frm_ABM_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Clientes\Frm_ABM_Clientes.Designer.cs">
+    <Compile Include="Formularios\Frm_ABM_Clientes.Designer.cs">
       <DependentUpon>Frm_ABM_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Proveedores\Frm_ABM_Nuevo_Proveedores.cs">
+    <Compile Include="Formularios\Frm_ABM_Nuevo_Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Proveedores\Frm_ABM_Nuevo_Proveedores.Designer.cs">
+    <Compile Include="Formularios\Frm_ABM_Nuevo_Proveedores.Designer.cs">
       <DependentUpon>Frm_ABM_Nuevo_Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_Login.cs">
@@ -107,10 +107,10 @@
     <EmbeddedResource Include="Formularios\Frm_ABM_Nuevo_Cliente.resx">
       <DependentUpon>Frm_ABM_Nuevo_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Clientes\Frm_ABM_Clientes.resx">
+    <EmbeddedResource Include="Formularios\Frm_ABM_Clientes.resx">
       <DependentUpon>Frm_ABM_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Proveedores\Frm_ABM_Nuevo_Proveedores.resx">
+    <EmbeddedResource Include="Formularios\Frm_ABM_Nuevo_Proveedores.resx">
       <DependentUpon>Frm_ABM_Nuevo_Proveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Escritorio.resx">
