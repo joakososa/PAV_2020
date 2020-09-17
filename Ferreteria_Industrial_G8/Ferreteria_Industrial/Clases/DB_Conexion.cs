@@ -22,14 +22,21 @@ namespace Ferreteria_Industrial.Clases
                        
         }
 
+        private void Desconectar_BD()
+        {
+            Conexion.Close();
+        }
+
         public DataTable Consulta_Sql (string Sql)
         {
             Conectar();
             Cmd_Sql.CommandText = Sql;
             DataTable Tabla = new DataTable();
             Tabla.Load(Cmd_Sql.ExecuteReader());
+            Desconectar_BD();
             return Tabla;
-                
+                          
          }
+     
     }
 }

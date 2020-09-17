@@ -63,7 +63,7 @@
             this.groupBox1.Size = new System.Drawing.Size(238, 239);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Nuevo Cliente";
+            this.groupBox1.Text = "Cliente";
             // 
             // Txt_Email
             // 
@@ -153,6 +153,7 @@
             this.Btn_Agregar.TabIndex = 12;
             this.Btn_Agregar.Text = "Agregar";
             this.Btn_Agregar.UseVisualStyleBackColor = true;
+            this.Btn_Agregar.Click += new System.EventHandler(this.Btn_Agregar_Click);
             // 
             // Btn_Cancelar
             // 
@@ -162,6 +163,7 @@
             this.Btn_Cancelar.TabIndex = 11;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Nuevo
             // 
@@ -171,6 +173,7 @@
             this.Btn_Nuevo.TabIndex = 10;
             this.Btn_Nuevo.Text = "Nuevo";
             this.Btn_Nuevo.UseVisualStyleBackColor = true;
+            this.Btn_Nuevo.Click += new System.EventHandler(this.Btn_Nuevo_Click);
             // 
             // Frm_ABM_Nuevo_Cliente
             // 

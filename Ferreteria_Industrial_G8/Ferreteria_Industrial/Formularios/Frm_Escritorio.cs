@@ -27,8 +27,25 @@ namespace Ferreteria_Industrial
         {
             Frm_Login Login = new Frm_Login();
             Login.ShowDialog();
+            if (Login.Usuario == "")
+                this.Close();
             Lbl_Sesion.Text = "Sesión: " + Login.Usuario;
             Login.Dispose();
+            
+        }
+
+        private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Clientes ABM_Cliente = new Frm_ABM_Clientes();
+            ABM_Cliente.ShowDialog();
+            ABM_Cliente.Dispose();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Proveedor ABM_Proveedor = new Frm_ABM_Proveedor();
+            ABM_Proveedor.ShowDialog();
+            ABM_Proveedor.Dispose();
         }
     }
 }

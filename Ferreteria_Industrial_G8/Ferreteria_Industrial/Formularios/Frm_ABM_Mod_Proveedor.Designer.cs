@@ -1,6 +1,6 @@
 ﻿namespace Ferreteria_Industrial.Formularios
 {
-    partial class Frm_ABM_Nuevo_Proveedores
+    partial class Frm_ABM_Mod_Proveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -61,7 +61,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(238, 239);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Proveedor";
             // 
@@ -175,11 +175,11 @@
             this.Btn_Nuevo.UseVisualStyleBackColor = true;
             this.Btn_Nuevo.Click += new System.EventHandler(this.Btn_Nuevo_Click);
             // 
-            // Frm_ABM_Nuevo_Proveedores
+            // Frm_ABM_Mod_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(262, 308);
+            this.ClientSize = new System.Drawing.Size(264, 301);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Btn_Agregar);
             this.Controls.Add(this.Btn_Cancelar);
@@ -187,10 +187,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Frm_ABM_Nuevo_Proveedores";
+            this.Name = "Frm_ABM_Mod_Proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nuevo Proveedor...";
-            this.Load += new System.EventHandler(this.Frm_ABM_Nuevo_Proveedores_Load);
+            this.Text = "Modificar Proveedor...";
+            this.Load += new System.EventHandler(this.Frm_ABM_Mod_Proveedor_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

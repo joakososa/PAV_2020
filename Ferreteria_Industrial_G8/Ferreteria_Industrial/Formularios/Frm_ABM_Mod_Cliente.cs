@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace Ferreteria_Industrial.Formularios
 {
-    public partial class Frm_ABM_Nuevo_Proveedores : Form
+    public partial class Frm_ABM_Mod_Cliente : Form
     {
-        public Frm_ABM_Nuevo_Proveedores()
+        public Frm_ABM_Mod_Cliente()
         {
             InitializeComponent();
         }
 
-        private void Btn_Nuevo_Click(object sender, EventArgs e)
+        private void Frm_ABM_Mod_Cliente_Load(object sender, EventArgs e)
         {
-            Txt_CUIT.Text = "";
-            Txt_Descripcion.Text = "";
-            Txt_Email.Text = "";
-            Txt_RazonSocial.Text = "";
-            Txt_Telefono.Text = "";            
             Btn_Nuevo.Enabled = false;
-            Btn_Agregar.Enabled = true;
-            groupBox1.Enabled = true;
             Txt_CUIT.Focus();
         }
 
@@ -39,12 +32,18 @@ namespace Ferreteria_Industrial.Formularios
         {
             Btn_Agregar.Enabled = false;
             Btn_Nuevo.Enabled = true;
-            groupBox1.Enabled = false;
         }
 
-        private void Frm_ABM_Nuevo_Proveedores_Load(object sender, EventArgs e)
+        private void Btn_Nuevo_Click(object sender, EventArgs e)
         {
-            Btn_Nuevo.Enabled = false;            
+            Txt_CUIT.Text = "";
+            Txt_Descripcion.Text = "";
+            Txt_Email.Text = "";
+            Txt_RazonSocial.Text = "";
+            Txt_Telefono.Text = "";
+            Txt_CUIT.Focus();
+            Btn_Nuevo.Enabled = false;
+            Btn_Agregar.Enabled = true;
         }
     }
 }

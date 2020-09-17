@@ -19,6 +19,7 @@ namespace Ferreteria_Industrial
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Frm_Escritorio());
             //Application.Run(new Frm_Login());
+            
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Ferreteria_Industrial.Formularios;
+using Ferreteria_Industrial.Negocio;
 
 namespace Ferreteria_Industrial.Formularios
 {
@@ -12,11 +13,6 @@ namespace Ferreteria_Industrial.Formularios
         {
             InitializeComponent();
             Txt_Usuario.Focus();
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -35,17 +31,28 @@ namespace Ferreteria_Industrial.Formularios
             }
             if (Txt_Password.Text == "")
             {
-                MessageBox.Show("Ingrese el password.","Campo reuerido...", MessageBoxButtons.OK);
+                MessageBox.Show("Ingrese el password.","Campo requerido...", MessageBoxButtons.OK);
                 Txt_Password.Focus();
                 return;
             }
-            this.Usuario = Txt_Usuario.Text;
-            this.Close();
+            NG_Users Usuario = new NG_Users();
+            if (Usuario.Validar_Usuario (Txt_Usuario.Text,Txt_Password.Text)== NG_Users.Respuesta.Validacion_Correcta)
+             {
+                this.Usuario = Txt_Usuario.Text;
+                this.Close();
+             }  
+            else
+            {
+                MessageBox.Show("Este usuario no existe en la Base de Datos", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);                
+            }
+            
         }
 
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
+            this.Usuario = "";
             this.Close();
+
         }
     }
 }

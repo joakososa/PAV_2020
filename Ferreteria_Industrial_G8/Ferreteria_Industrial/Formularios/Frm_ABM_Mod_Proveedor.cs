@@ -10,29 +10,17 @@ using System.Windows.Forms;
 
 namespace Ferreteria_Industrial.Formularios
 {
-    public partial class Frm_ABM_Nuevo_Cliente : Form
+    public partial class Frm_ABM_Mod_Proveedor : Form
     {
-        public Frm_ABM_Nuevo_Cliente()
+        public Frm_ABM_Mod_Proveedor()
         {
             InitializeComponent();
-            Btn_Nuevo.Enabled = false;
-        }
-
-        private void Frm_ABM_Nuevo_Cliente_Load(object sender, EventArgs e)
-        {
-            Btn_Nuevo.Enabled = false;
         }
 
         private void Btn_Agregar_Click(object sender, EventArgs e)
         {
-            if (Txt_CUIT.Text == "" || Txt_RazonSocial.Text == "")
-            {
-                MessageBox.Show("Campo requerido no Ingresado", "Campo Requerido...", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
             Btn_Agregar.Enabled = false;
             Btn_Nuevo.Enabled = true;
-            groupBox1.Enabled = false;
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
@@ -46,11 +34,15 @@ namespace Ferreteria_Industrial.Formularios
             Txt_Descripcion.Text = "";
             Txt_Email.Text = "";
             Txt_RazonSocial.Text = "";
-            Txt_Telefono.Text = "";            
+            Txt_Telefono.Text = "";
+            Txt_CUIT.Focus();
             Btn_Nuevo.Enabled = false;
             Btn_Agregar.Enabled = true;
-            groupBox1.Enabled = true;
-            Txt_CUIT.Focus();
+        }
+
+        private void Frm_ABM_Mod_Proveedor_Load(object sender, EventArgs e)
+        {
+            Btn_Nuevo.Enabled = false;
         }
     }
 }

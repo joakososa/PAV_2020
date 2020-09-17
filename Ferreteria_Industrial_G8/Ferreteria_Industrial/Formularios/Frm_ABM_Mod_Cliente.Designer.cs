@@ -1,6 +1,6 @@
 ﻿namespace Ferreteria_Industrial.Formularios
 {
-    partial class Frm_ABM_Nuevo_Proveedores
+    partial class Frm_ABM_Mod_Cliente
     {
         /// <summary>
         /// Required designer variable.
@@ -61,9 +61,9 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(238, 239);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Proveedor";
+            this.groupBox1.Text = "Cliente";
             // 
             // Txt_Email
             // 
@@ -150,8 +150,8 @@
             this.Btn_Agregar.Location = new System.Drawing.Point(177, 273);
             this.Btn_Agregar.Name = "Btn_Agregar";
             this.Btn_Agregar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Agregar.TabIndex = 8;
-            this.Btn_Agregar.Text = "Agregar";
+            this.Btn_Agregar.TabIndex = 16;
+            this.Btn_Agregar.Text = "Modificar";
             this.Btn_Agregar.UseVisualStyleBackColor = true;
             this.Btn_Agregar.Click += new System.EventHandler(this.Btn_Agregar_Click);
             // 
@@ -160,7 +160,7 @@
             this.Btn_Cancelar.Location = new System.Drawing.Point(95, 274);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
             this.Btn_Cancelar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Cancelar.TabIndex = 7;
+            this.Btn_Cancelar.TabIndex = 15;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
             this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
@@ -170,16 +170,16 @@
             this.Btn_Nuevo.Location = new System.Drawing.Point(13, 275);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
             this.Btn_Nuevo.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Nuevo.TabIndex = 6;
+            this.Btn_Nuevo.TabIndex = 14;
             this.Btn_Nuevo.Text = "Nuevo";
             this.Btn_Nuevo.UseVisualStyleBackColor = true;
             this.Btn_Nuevo.Click += new System.EventHandler(this.Btn_Nuevo_Click);
             // 
-            // Frm_ABM_Nuevo_Proveedores
+            // Frm_ABM_Mod_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(262, 308);
+            this.ClientSize = new System.Drawing.Size(264, 301);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Btn_Agregar);
             this.Controls.Add(this.Btn_Cancelar);
@@ -187,10 +187,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Frm_ABM_Nuevo_Proveedores";
+            this.Name = "Frm_ABM_Mod_Cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nuevo Proveedor...";
-            this.Load += new System.EventHandler(this.Frm_ABM_Nuevo_Proveedores_Load);
+            this.Text = "Modificar Cliente...";
+            this.Load += new System.EventHandler(this.Frm_ABM_Mod_Cliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

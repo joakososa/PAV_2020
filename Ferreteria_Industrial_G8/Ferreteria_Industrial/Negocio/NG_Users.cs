@@ -15,7 +15,7 @@ namespace Ferreteria_Industrial.Negocio
         public Respuesta Validar_Usuario (string Usr, string Pass)
         {
             string Sql = "";
-            Sql = "SELECT * FROM users WHERE CUIT='"+Usr+"' AND password='"+ Pass+"'";
+            Sql = "SELECT * FROM users WHERE Usuario='"+ Usr +"' AND Password='"+ Pass +"'";
             DataTable Tabla = new DataTable();
             Tabla = DataBase.Consulta_Sql(Sql);
 
